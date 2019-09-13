@@ -1,4 +1,4 @@
-### 一個採用 Vue.js 及 Cordova 套件而成的 Hybrid App
+### 一個採用 Vue.js 、 Cordova 及 Capacitor 套件而成的 Hybrid App
 ---
 #### 前置作業：Vue與Cordova專案融合
 一、 創建及合併專案
@@ -60,6 +60,8 @@ if (window.location.protocol === 'file:' || window.location.port === '3000') {
 - 此專案使用到的plugins
     - [cordova-plugin-ble-central](https://github.com/don/cordova-plugin-ble-central)
 
+---
+### 使用 Cordova 指令輸出
 #### 各App平台輸出專案位置
 1) iOS：[platforms/ios](platforms/ios)
 2) Android：[platforms/android](platforms/android)
@@ -76,7 +78,7 @@ $ npm run build
 $ cordova build ios
 
 # 此專案也寫好了Script，可直接執行
-$ npm run ios
+$ npm run cor_ios
 ```
 
 2) Android：
@@ -85,9 +87,53 @@ $ npm run build
 $ cordova build android
 
 # 此專案也寫好了Script，可直接執行
-$ npm run android
+$ npm run cor_android
+```
+---
+### 使用 Capacitor 指令輸出
+#### 安裝 Capacitor
+```bash
+$ npm install --save @capacitor/core @capacitor/cli
 ```
 
+#### 初始化Cap
+```bash
+$ npx cap init
+```
+
+#### Capacitor輸出設定檔
+- capacitor.config.json
+
+#### 各App平台輸出專案位置
+1) iOS：[ios](./ios)
+2) Android：[android](./android)
+
+#### Vue輸出app專案
+- 若無app專案，請先執行：  
+1) iOS： ```$ npx cap add ios```  
+2) Android：```$ npx cap add android```  
+
+- 若已有app專案，且Vue專案已做更改，需重新輸出App，請執行：
+1) iOS： 
+```bash
+$ npm run build
+$ npx cap copy
+$ npx cap open ios
+
+# 此專案也寫好了Script，可直接執行
+$ npm run cap_ios
+```
+
+2) Android：
+```bash
+$ npm run build
+$ npx cap copy
+$ npx cap open android
+
+# 此專案也寫好了Script，可直接執行
+$ npm run cap_android
+```
+---
 #### 觀看UI修改，Hot Reload
 ```bash
 $ npm run serve

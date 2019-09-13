@@ -6,8 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "ios": "npm run build && cordova build ios",
-    "android": "npm run build && cordova build android"
+    "cor_ios": "npm run build && cordova build ios",
+    "cor_android": "npm run build && cordova build android",
+    "cap_ios":"npm run build && npx cap copy && npx cap open ios",
+    "cap_android":"npm run build && npx cap copy && npx cap open android"
   },
   "dependencies": {
     "@capacitor/cli": "^1.2.0",
