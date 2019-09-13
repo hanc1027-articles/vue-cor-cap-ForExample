@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "ios" : "npm run build && cordova build ios",
+    "android" : "npm run build && cordova build android"
   },
   "dependencies": {
     "bootstrap-vue": "^2.0.0",
