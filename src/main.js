@@ -11,6 +11,7 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
+// 使用 Cordova 套件
 import VueCordova from 'vue-cordova'
 Vue.use(VueCordova)
 
@@ -21,3 +22,9 @@ if (window.location.protocol === 'file:' || window.location.port === '3000') {
   cordovaScript.setAttribute('src', 'cordova.js')
   document.body.appendChild(cordovaScript)
 }
+
+// 使用 Bootstrap 套件
+import BootstrapVue from 'bootstrap-vue'
+Vue.use(BootstrapVue)
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
