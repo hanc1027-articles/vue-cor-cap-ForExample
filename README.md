@@ -55,6 +55,13 @@ if (window.location.protocol === 'file:' || window.location.port === '3000') {
 
 ```
 
+- .gitignore加入這三個資料夾名稱
+```
+ios
+android
+www
+```
+
 #### Cordova Plugins 安裝
 - 執行指令：```$ cordova plugin add cordova-plugin-device```
 - 此專案使用到的plugins
