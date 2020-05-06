@@ -3,7 +3,7 @@
 #### 前置作業：Vue與Cordova專案融合
 一、 創建及合併專案
 ```bash
-# 若沒有Cordova指領，需安裝全域Cordova
+# 若沒有Cordova指令，需安裝全域Cordova
 $ npm install -g cordova
 
 # !!!一定要先創建Cordova的專案，才可以創建Vue專案
