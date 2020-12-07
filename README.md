@@ -75,8 +75,8 @@ www
 ---
 ### 使用 Cordova 指令輸出
 #### 各App平台輸出專案位置
-1) iOS：[platforms/ios](platforms/ios)
-2) Android：[platforms/android](platforms/android)
+1) iOS：./platforms/ios
+2) Android：./platforms/android
 
 #### Vue輸出app專案
 - 若platforms下無此專案，請執行：  
@@ -117,8 +117,8 @@ $ npx cap init
 - capacitor.config.json
 
 #### 各App平台輸出專案位置
-1) iOS：[ios](./ios)
-2) Android：[android](./android)
+1) iOS：./ios
+2) Android：./android
 
 #### Vue輸出app專案
 - 若無app專案，請先執行：  
