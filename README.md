@@ -57,7 +57,7 @@ if (window.location.protocol === 'file:' || window.location.port === '3000') {
   cordovaScript.setAttribute('type', 'text/javascript')
   cordovaScript.setAttribute('src', 'cordova.js')
   document.body.appendChild(cordovaScript)
-
+}
 ```
 
 - .gitignore加入這三個資料夾名稱
